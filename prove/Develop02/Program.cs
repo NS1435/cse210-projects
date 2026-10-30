@@ -1,27 +1,14 @@
 using System;
 
-public class Entry
-{
-    public string _date = "";
-    public string _promptText = "";
-    public string _entryText = "";
-
-    public void Display()
-    {
-        Console.WriteLine($"Date: {_date}");
-        Console.WriteLine($"Prompt: {_promptText}");
-        Console.WriteLine($"Response: {_entryText}");
-        Console.WriteLine();
-    }
-}
-
 public class Program
 {
     public static void Main(string[] args)
     {
         // EXCEEDING REQUIREMENTS:
-        // The user can choose from five writing categories or select Surprise Me.
-        // These categories were inspired by LearningExpress's 501 Writing Prompts.
+        // The user can choose from five writing categories
+        // or select Surprise Me.
+        // These categories were inspired by LearningExpress's
+        // 501 Writing Prompts.
 
         Journal journal = new Journal();
         PromptGenerator promptGenerator = new PromptGenerator();
@@ -120,7 +107,8 @@ public class Program
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"Could not load journal: {ex.Message}");
+                    Console.WriteLine(
+                        $"Could not load journal: {ex.Message}");
                 }
             }
             else if (choice == "4")
@@ -135,7 +123,8 @@ public class Program
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"Could not save journal: {ex.Message}");
+                    Console.WriteLine(
+                        $"Could not save journal: {ex.Message}");
                 }
             }
             else if (choice == "5")
@@ -144,7 +133,8 @@ public class Program
             }
             else
             {
-                Console.WriteLine("Invalid choice. Please try again.");
+                Console.WriteLine(
+                    "Invalid choice. Please try again.");
             }
         }
     }

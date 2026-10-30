@@ -1,3 +1,18 @@
+// EXCEEDING REQUIREMENTS
+// - Scripture library: the program picks a random scripture from a library
+//   (Philippians 4:13, John 3:16, Proverbs 3:5-6).
+// - Difficulty levels (Easy, Medium, Hard): each hides a percentage of the words
+//   per round, and each round hides slightly fewer words than the last.
+// - Hints: type "hint" to reveal one letter of a hidden word, alternating
+//   between a first letter and a last letter.
+// - Recall test: when every word is hidden, the user types the scripture from
+//   memory and the program scores the accuracy.
+// - Scoring and progress: score uses a difficulty multiplier, a hint penalty,
+//   and a streak bonus. Sessions are saved to a text file, which tracks
+//   consecutive practice days.
+// - Hidden words are never picked again (the stretch challenge).
+
+
 using System;
 
 class Program

@@ -53,6 +53,7 @@ public class PromptGenerator
     public string GetRandomPrompt(List<string> prompts)
     {
         int index = _random.Next(prompts.Count);
+
         return prompts[index];
     }
 
